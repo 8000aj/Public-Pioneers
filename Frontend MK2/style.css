@@ -1,0 +1,46 @@
+html, body {
+    background-color: #000000;
+    height=100%;
+}
+
+#LoginForm {
+    width: 100%;
+    height: 100%;
+}
+
+#log {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 5px;
+    bottom: 5px;
+}
+
+#Username {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 5px;
+    max-width: 1000px;
+    max-height: 28px;
+    background: transparent;
+}
+
+#Password {
+    position: absolute;
+    top: 72px;
+    left: 15px;
+    right: 5px;
+    bottom: 5px;
+    max-width: 1000px;
+    max-height: 28px;
+    background: transparent;
+}
+
+input[type="text"], textarea{
+    background: transparent;
+    color: #FFFFFF;
+    width: 1392px;
+    height: 22px;
+    outline: grey;
+}
