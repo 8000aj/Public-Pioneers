@@ -1,7 +1,6 @@
 html {
     color: #e5e4e2;
-    backround-color: #000000;
-    
+    backround-color: #000;
 }    
 
 
@@ -11,7 +10,7 @@ body {
     width: auto;
     color: #e5e4e2;
     text-align: justify;
-    backround-color: #000000;
+    backround-color: #000;
 }
 
 h1 {
@@ -32,5 +31,5 @@ Leviathan {
 
 Pioneers {
     color: #e5e4e2;
-    backround-color: #000000
+    backround-color: #000;
 }
