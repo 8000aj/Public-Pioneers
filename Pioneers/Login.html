@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <!-- Tab Title -->
+        <title>LOG IN</title>
+        <!-- Instructions for dimensions and scaling (https://www.w3schools.com/css/css_rwd_viewport.asp)
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         -->
+
+
+        <!-- Calls the 'style.css' file to stylize the page -->
+        <link rel="stylesheet" href="/css/main.css"/>
+    <head>
+
+    <body style="background-color: black">
+    <div id="svg-container">
+        <!-- viewBox = <min-x> <min-y> <width> <height> -->
+        <svg id="LoginForm" viewBox="0 0 1100 590" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="glow">
+                    <fegaussianblur stdDeviation="4" result="coloredBlur"/></fegaussianblur>
+                    <femerge>
+                        <femergenode in="coloredBlur"></femergenode>
+                        <femergenode in="coloredBlur"></femergenode>
+                        <femergenode in="coloredBlur"></femergenode>
+                        <femergenode in="coloredBlur"></femergenode>
+                        <femergenode in="coloredBlur"></femergenode>
+                        <femergenode in="coloredBlur"></femergenode>
+                        <femergenode in="SourceGraphic"></femergenode>
+                    </femerge>
+                </filter>
+            </defs>
+                <rect x="5" y="5" height="23" width="80" style="fill: none;  stroke: #f44242; filter: url(#glow)"/>
+
+                <rect x="5" y="48.5" height="23" width="1080" style="fill: none;  stroke: #4286f4; filter: url(#glow)"/>
+        </svg>
+    </div>
+
+    <div id="Username">
+        <input type="text">
+    </div>
+
+    <br></br>    
+        
+    <div id="Password">
+        <input type="text">
+    </div>
+
+
+    </body>
+</html>
