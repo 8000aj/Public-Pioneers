@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <!-- Tab Title -->
+        <title>LOG IN tester</title>
+        <!-- Instructions for dimensions and scaling (https://www.w3schools.com/css/css_rwd_viewport.asp)
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         -->
+
+
+        <!-- Calls the 'style.css' file to stylize the page -->
+    <head>
+
+    <body>
+        <style>
+            html {
+            background-color: black;
+            }
+            #Function {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 5px;
+            max-width: 1000px;
+            max-height: 28px;
+            background: transparent;
+            }
+            input[type="text"], textarea {
+            background: transparent;
+            color: #FFFFFF;
+            width: 1392px;
+            height: 22px;
+            outline: grey;
+            }
+        </style>
+
+    <div id="svg-container">
+        <!-- viewBox = <min-x> <min-y> <width> <height> -->
+        <svg id="LoginForm" viewBox="0 0 1100 590" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="glow">
+                        <fegaussianblur stdDeviation="4" result="coloredBlur"/></fegaussianblur>
+                        <femerge>
+                            <femergenode in="coloredBlur"></femergenode>
+                            <femergenode in="coloredBlur"></femergenode>
+                            <femergenode in="coloredBlur"></femergenode>
+                            <femergenode in="coloredBlur"></femergenode>
+                            <femergenode in="SourceGraphic"></femergenode>
+                        </femerge>
+                    </filter>
+                    <filter id="lessglow">
+                        <fegaussianblur stdDeviation="4" result="coloredBlur"/></fegaussianblur>
+                        <femerge>
+                            <femergenode in="coloredBlur"></femergenode>
+                            <femergenode in="coloredBlur"></femergenode>
+                            <femergenode in="SourceGraphic"></femergenode>
+                        </femerge>
+                    </filter>
+                </defs>
+                
+                    <rect x="5" y="5" height="23" width="1080" style="fill: none;  stroke: #9370DB; filter: url(#glow)"/>
+
+                    <g>
+                        <rect x="8" y="52" height="520" width="330" style="fill: none;  stroke: #e5e4e2; filter: url(#lessglow)"/>
+                        <text x="12" y="77" font-family="Helvetica" font-size="25" fill="#e5e4e2">TEST</text>
+                    </g>
+
+                    <rect x="382.5" y="52" height="520" width="330" style="fill: none;  stroke: #e5e4e2; filter: url(#lessglow)"/>
+                    <rect x="755" y="52" height="520" width="330" style="fill: none;  stroke: #e5e4e2; filter: url(#lessglow)"/>
+        </svg>
+    </div>
+
+    <div id="Function">
+        <input type="text">
+    </div>
+
+    </body>
+</html>
