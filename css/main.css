@@ -1,6 +1,6 @@
 html {
-    color: #e5e4e2;
-    backround-color: #ae5eff;
+    color: #ae5cff;
+    backround-color: #ae5cff;
 }    
 
 
@@ -8,9 +8,9 @@ html {
 body {
     font-family:'Helvetica';
     width: auto;
-    color: #e5e4e2;
+    color: #ae5cff;
     text-align: justify;
-    backround-color: #000;
+    backround-color: #ae5cff;
 }
 
 h1 {
