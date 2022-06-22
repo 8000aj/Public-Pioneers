@@ -67,9 +67,49 @@
 		left: 142px;
 		}
 		    
-	</style>
-
+            #Function {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 5px;
+            max-width: 1000px;
+            max-height: 28px;
+            background: transparent;
+            }
+            input[type="text"], textarea {
+            background: transparent;
+            color: #FFFFFF;
+            width: 1392px;
+            height: 22px;
+            outline: grey;
+            }
+        </style>
 	<body>
+	        <div id="svg-container">
+		  <!-- viewBox = <min-x> <min-y> <width> <height> -->
+		  <svg id="LoginForm" viewBox="0 0 1100 590" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+			    <filter id="glow">
+				<fegaussianblur stdDeviation="4" result="coloredBlur"/></fegaussianblur>
+				<femerge>
+				    <femergenode in="coloredBlur"></femergenode>
+				    <femergenode in="coloredBlur"></femergenode>
+				    <femergenode in="coloredBlur"></femergenode>
+				    <femergenode in="coloredBlur"></femergenode>
+				    <femergenode in="SourceGraphic"></femergenode>
+				</femerge>
+			    </filter>
+			    <filter id="lessglow">
+				<fegaussianblur stdDeviation="4" result="coloredBlur"/></fegaussianblur>
+				<femerge>
+				    <femergenode in="coloredBlur"></femergenode>
+				    <femergenode in="coloredBlur"></femergenode>
+				    <femergenode in="SourceGraphic"></femergenode>
+				</femerge>
+			    </filter>
+			</defs>
+
+			    <rect x="5" y="5" height="23" width="1080" style="fill: none;  stroke: #9370DB; filter: url(#glow)"/>
 		
 		<div class="fuckoff">
 			<h1 id="aj0">#ae5cff</h1>
