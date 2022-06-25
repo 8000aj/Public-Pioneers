@@ -115,8 +115,8 @@
 			<h3 id="pi">
 				<pre xml:space="preserve">
 						 PIONEERSss
-						 PIONEERS
-						 PIONEERS
+						 PIONEERSss
+						 PIONEERSss
 				</pre>
 						
 			
@@ -156,14 +156,28 @@
 			document.write(a);
 				
 			<h2>My First Web Page</h2>
-			<p>My First Paragraph.</p>
+			<h1>My First Paragraph.</h1>
 
-			<p id="demo"></p>
+			<h1 id="demo"></h1>
 
 			<script>
 			document.getElementById("demo").innerHTML = 57 + 64;
 			</script>
 				
+			First Name: <input type="text" id="myText" value="Mickey">
+
+			<p>Click the button to display the value of the value attribute of the text field.</p>
+
+			<button onclick="myFunction()">Try it</button>
+
+			<p id="demo"></p>
+
+			<script>
+			function myFunction() {
+			  var x = document.getElementById("myText").value;
+			  document.getElementById("demo").innerHTML = x;
+			}
+			</script>
 			
 	
 		
